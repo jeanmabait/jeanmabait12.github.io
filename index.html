@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <title>Sorry</title>
+  
+  <style>
+    
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+ *{
+   
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  
+ }
+ 
+    body{
+      
+      background: black;
+      
+    }
+    
+    button{
+      
+      width: 100px;
+      height: 100px;
+      color: white;
+      background-color: black;
+      border-color: white;
+      transition: 1s;
+      border-radius: 90px;
+      
+    }
+    
+    button:hover{
+      
+      color: black;
+      background-color: white;
+      box-shadow: 0 0 50px white;
+      
+    }
+    
+    #confirm{
+      
+      margin-left: 100px;
+      margin-top: 100px;
+      
+    }
+    
+
+    [popover]::backdrop{
+      
+      background: black;
+      
+    }
+    
+    [popover]{
+      
+      
+      text-align: center;
+      color: white;
+      flex: wrap;
+      width: 200px;
+      background: black;
+      box-shadow: 0 0 30px white;
+      
+    }
+    
+  </style>
+  
+
+</head>
+
+<body>
+  
+  <button popovertarget="confirm">mapapatawad bako?</button>
+  
+  <div id="confirm" popover>
+    
+    <p>sure?</p>
+    
+    
+    <button class="yes" popovertarget="thanks">Yes</button>
+    <button class="no" popovertarget="why">no</button>
+    
+
+    <div id="why" popover>
+      
+
+
+
+          <p>why naman :(</p>
+          <input type="text" placeholder="pls put the reason here">
+          <input type="submit" popovertarget="ok">
+          
+
+          
+    </div>
+    
+    <div id="thanks" popover>
+      
+      <p>thank you and i love you, sorry na muah♥️♥️</p>
+      
+      <a href="https://youtu.be/xAzgPKan7H8?si=7C2ATS6pC5CxJrJV">
+      <button class="clickme">click me</button>
+      </a>
+      
+    </div>
+    
+    <div id="ok" popover>
+      
+      <p>:(((((((( sorry i would never do that again.</p>
+      
+      <a href="https://youtu.be/AQNTfdV_1HM?si=55fH_j_McbkYyFaN">
+      <button class="clickme">Click me</button>
+      </a>
+      
+    </div>
+              
+
+  </div>
+ 
+
+</body>
+</html>
